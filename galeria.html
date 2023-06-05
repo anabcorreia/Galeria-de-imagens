@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+<style>
+ 
+ body {
+    font-family: Arial, sans-serif;
+    text-decoration-color: burlywood;
+ }
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 48px;
+    background-color: rgba(99, 79, 248, 0.6);
+}
+.logo{
+    max-width: 250px;
+    max-height: auto;
+    
+}
+.navigation ul{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    
+}
+.navigation li a{
+    color: #ffffff;
+    font-size: 30px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: all 6s;
+    display: inline;
+    text-decoration: none;
+}
+.navigation li a:hover{
+    border-bottom: 2px solid #ffffff;
+    display: inline;
+    text-decoration: none;
+}
+.navigation .search{
+    width: 40px;
+    filter: invert(1);
+}
+.navigation .perfil{
+    width: 50px;
+    
+}
+
+
+</style>
+<header>
+    <a href="#"><img src="imagens/ABCGallery.png" alt="logo" class="logo"></a>
+    <nav class="navigation">
+        <ul>
+            <li><a href="http://localhost/galeria/index.html">INÍCIO</a></li>
+            <li><a href="http://localhost/galeria/index.php">CADASTRO</a></li>
+            <li><a href="http://localhost/galeria/galeria.html">GALERIA</a></li>
+            <li><a href="http://localhost/galeria/sobre.html">SOBRE</a></li>
+            <img src="imagens/search.png" alt="Pesquisa" class="search">
+       
+            <a href="index.php"><img src="imagens/cadastro.png" alt="logo do canal" class="perfil"></a>
+     
+        </ul>
+    </nav>
+</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body background="imagens/Fundo Do Céu Preto H5.jpg">
+ <style>
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.6; 
+}
+
+.container {
+  width: 98.25%;
+  margin: 2rem auto; 
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 1.5rem; 
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+
+}
+
+.gallery__img:hover{
+  transform: scale(1.1);
+  transition: 500ms;
+}
+
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.gallery__item--2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.gallery__item--3 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+.gallery__item--4 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+.gallery__item--5 {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+.gallery__item--6 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 11;
+}
+.gallery__item--7 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 11;
+}
+.gallery__item--8 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 11;
+}
+.gallery__item--9 {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 6;
+  grid-row-end: 11;
+}
+.gallery__item--10 {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 6;
+  grid-row-end: 11;
+}
+.gallery__item--11 {
+  grid-column-start: 7;
+  grid-column-end: 8;
+  grid-row-start: 6;
+  grid-row-end: 11;
+}
+.gallery__item--12 {
+  grid-column-start: 8;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 11;
+}
+.gallery__item--13 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 11;
+  grid-row-end: 14;
+}
+.gallery__item--14 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 11;
+  grid-row-end: 14;
+}
+.gallery__item--15 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 14;
+  grid-row-end: 16;
+}
+.gallery__item--16 {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 14;
+  grid-row-end: 16;
+}
+.gallery__item--17 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 14;
+  grid-row-end: 15;
+}
+.gallery__item--18 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 15;
+  grid-row-end: 16;
+}
+.gallery__item--19 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 14;
+  grid-row-end: 16;
+}
+
+
+
+
+
+  </style>
+
+<div class="container">
+    <div class="gallery">
+        <figure class="gallery__item gallery__item--1">
+            <img src="imagens/1.jpg" alt="Gallery image 1" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--2">
+            <img src="imagens/2.jpg" alt="Gallery image 2" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--3">
+            <img src="imagens/3.png" alt="Gallery image 3" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--4">
+            <img src="imagens/4.jpg" alt="Gallery image 4" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--5">
+            <img src="imagens/5.jpg" alt="Gallery image 5" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--6">
+            <img src="imagens/6.jpg" alt="Gallery image 6" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--7">
+            <img src="imagens/7.jpg" alt="Gallery image 7" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--8">
+            <img src="imagens/8.jpg" alt="Gallery image 8" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--9">
+            <img src="imagens/9.jpg" alt="Gallery image 9" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--10">
+            <img src="imagens/10.jpg" alt="Gallery image 10" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--11">
+            <img src="imagens/11.jpg" alt="Gallery image 11" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--12">
+            <img src="imagens/12.jpg" alt="Gallery image 12" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--13">
+            <img src="imagens/13.jpg" alt="Gallery image 13" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--14">
+            <img src="imagens/14.jpg" alt="Gallery image 14" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--15">
+            <img src="imagens/15.jpg" alt="Gallery image 15" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--16">
+            <img src="imagens/16.jpg" alt="Gallery image 16" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--17">
+            <img src="imagens/17.jpg" alt="Gallery image 17" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--18">
+            <img src="imagens/18.jpg" alt="Gallery image 18" class="gallery__img">
+        </figure>
+        <figure class="gallery__item gallery__item--19">
+            <img src="imagens/19.jpg" alt="Gallery image 19" class="gallery__img">
+        </figure>
+        
+    </div>
+</div>
+</body>
+</html>
+
